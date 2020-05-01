@@ -1,2 +1,2 @@
 # Javascript_School
-Learning repsiutory
+This is a change in the repository
