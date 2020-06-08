@@ -5,22 +5,34 @@
 * TODO: What is pending?
 * // things not necessary
 */
+
+body{
+    margin:0;
+    background-color: #ab88ff; 
+    font-family: 'Muli', sans-serif;
+}
 .header{
     width: 100%;
     height:80px;
     background-color: #ab88ff;
-
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 .header__img {
-    height: 80%;
+    width: 200px;
+    
     margin-top: 10px;
     margin-left: 10px;
 }
 .header__menu{
     margin-right: 30px;
+    
 }
+
 .header__menu ul {
-    display: none;
+    /* Estado inicial del menu ante del hover */
+    /*display: none;*/  
     /*modifica el estilo de los puntitos en la lista*/
     list-style: none;
     /*ul tiene por defecto un padding*/
@@ -29,15 +41,73 @@
     text-align: right;
     /*position absolute se configura de acuerdo al parent*/
     position: absolute;
-    /*se mueve el elemento 14 pizeles a la izquierda*/
+    
+    width: 100px;
+    /*se mueve el elemento 14 pixeles a la izquierda*/
     margin: 0px 0px 0px -14px;
+    
+    visibility: hidden;
+
+    opacity: 0;
+
+    
+}
+/*Se usa ul:hover para que cuando bajemos el cursor se mantenga
+el bloque   */
+
+.header__menu:hover ul, ul:hover {
+    /*  */
+
+    /*display:block;*/
+
+    
+    visibility: visible;
+
+    opacity: 1; 
+
+    transition: visibility 0.5s, opacity 0.5s cubic-bezier(0, 0.54, 0.62, 0.82);
+}
+.header__menu li {
+    /*  */
+
+    /* display:block; */
+
+    margin: 10px 0px;
+
+    
 
 }
+.header__menu li a {
+    /*  */
+
+    text-decoration: none;
+    color:white;
+
+}
+.header__menu li a:hover {
+    /*  */
+
+    text-decoration: underline;
+    color:white;
+    
+}
 .header__menu--profile{
-    margin-left: 8px;
+    margin-right: 8px;
+    
+    display: flex;
+    align-items:center; 
+    cursor: pointer;
+
+}
+.header__menu--profile img{
     width: 40px;
+    height: 40px;
+    margin-right: 8px;
+
 }
-body{
-    margin:0;
-    background-color: #ab88ff; 
+.header__menu--profile p{
+    
+    color: white;
+    
 }
+
