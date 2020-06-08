@@ -10,7 +10,13 @@ body{
     margin:0;
     background-color: #ab88ff; 
     font-family: 'Muli', sans-serif;
+    /* display: grid; */
+    /* grid-template-rows: 100px 25% auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"; */
 }
+/*====================HEADER===========================*/
 .header{
     width: 100%;
     height:80px;
@@ -18,6 +24,8 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
+
+    grid-area: header;
 }
 .header__img {
     width: 200px;
@@ -111,3 +119,48 @@ el bloque   */
     
 }
 
+/*===================MAIN================================*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+
+}
+.main__search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main__search input{
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 70%;
+    background: #ab88ff;
+    font-size: 1.2rem;
+}
+.main__search input:focus{
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 70%;
+    background: #ab88ff;
+    font-size: 1.2rem;
+
+}
+.main__search p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main__movieslider{
+    height: 200px;
+    width: 100%;
+}
+
+
+/*====================FOOTER=============================*/
