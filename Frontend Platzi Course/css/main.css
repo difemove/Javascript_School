@@ -178,6 +178,12 @@ body{
     position: relative;
     
 }
+.carousel h2:first-child{
+    color: white;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding-left: 30px;
+}
 /* width */
 .carousel::-webkit-scrollbar {
   width: 10px;
@@ -206,9 +212,10 @@ body{
     flex-wrap: nowrap;
     margin: 70px 0px;
     align-items: space-between;
-    
+    padding-left: 30px;
     
 }
+
 .carousel-item{
     background-color: crimson;
     width: 200px;
@@ -279,3 +286,27 @@ body{
     margin-bottom: 5px;
 }
 /*==============================   FOOTER   ============================*/
+.footer{
+    background-color: #AB88FF;
+    display: flex;
+   align-items: center; 
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+
+}
+.footer a{
+    
+    text-decoration: none;
+    color: white;
+    cursor:pointer;
+   
+    
+}
+
+.footer a:hover{
+    
+    text-decoration: underline;
+    
+    
+}

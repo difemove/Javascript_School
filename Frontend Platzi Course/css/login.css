@@ -153,6 +153,7 @@ body{
 
 .login__container--register{
     font-size: 14px;
+    align-self: center;
 }
 
 .login__container--register a{
@@ -169,7 +170,8 @@ body{
 .footer{
     background-color: #AB88FF;
     display: flex;
-    align-items: center;
+   align-items: center; 
+    justify-content: space-around;
     height: 100px;
     width: 100%;
 
@@ -188,4 +190,21 @@ body{
     text-decoration: underline;
     
     
+}
+
+@media only screen and (max-width: 600px){
+
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .footer{
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
