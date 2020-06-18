@@ -1,0 +1,111 @@
+/**
+* * Important information higlithed
+* ! Alert, be aware of this.
+* ? Question for course
+* TODO: What is pending?
+* // things not necessary
+
+*/
+body{
+    margin:0;
+    /*//background-color: #ab88ff; */
+    font-family: 'Muli', sans-serif;
+    /* display: grid; */
+    /* grid-template-rows: 100px 25% auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"; */
+}
+/*==============================   HEADER   ============================*/
+.header{
+    width: 100%;
+    height:80px;
+    background-color:  #AB88FF;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header__img {
+    width: 200px;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*==============================    MAIN    ============================*/
+.main{
+    background-color:  #AB88FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px); ;
+}
+.main__404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__404--title {
+    font-size: 120px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.main__404--subtitle{
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+}
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    
+  }
+
+  
+  @keyframes move {
+    0% {transform: translate3d(0,0,0);}
+    50% {transform: translate3d(0,16px,0);}
+    100% {transform: translate3d(0,0,0);}
+  }
+  .move {
+    animation-name: move;
+    
+  }
+/*==============================   FOOTER   ============================*/
+.footer{
+    background-color: #AB88FF;
+    display: flex;
+   align-items: center; 
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+
+}
+.footer a{
+    
+    text-decoration: none;
+    color: white;
+    cursor:pointer;
+   
+    
+}
+
+.footer a:hover{
+    
+    text-decoration: underline;
+    
+    
+}
